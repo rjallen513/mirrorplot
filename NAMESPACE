@@ -1,1 +1,1 @@
-export(mirrorplot)
+exportPattern("^[[:alpha:]]+")
