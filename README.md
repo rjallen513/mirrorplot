@@ -12,7 +12,7 @@ The basic use of this function is:
 
 To make the plot above we would use the code:
 
-    mirrorplot(DF = df, CHR = 2, START = 54970822, END = 56970822, SENTINEL = "rs148616939", GENE_START = 55401927, GENE_END = 55459699, T1THRESH1 = 5e-8, TITLE = "DEPTOR - GTEx (Lung)")
+    mirrorplot(df, CHR = 2, START = 54970822, END = 56970822, SENTINEL = "rs148616939", GENE_START = 55401927, GENE_END = 55459699, T1THRESH1 = 5e-8, TITLE = "DEPTOR - GTEx (Lung)")
 
 More details on how to use the function including for how to change the appearance of the plot see the manual mirrorplot.Rd in the "man" folder. Two example datasets are available in the "data" folder.
 
