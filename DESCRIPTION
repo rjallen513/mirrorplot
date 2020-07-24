@@ -3,7 +3,7 @@ Type: Package
 Title: Create Mirror Plots for Genetic Data
 Version: 0.1.0
 Author: Richard Allen
-Maintainer: Richard Allen rja34@leicester.ac.uk
+Maintainer: Richard Allen <rja34@leicester.ac.uk>
 Description: This package creates mirror plots to compare the results from two genetic analyses (for example from two genome-wide association studies [GWAS] or comparing a GWAS to results from an eQTL study).
 License: 
 Encoding: UTF-8
