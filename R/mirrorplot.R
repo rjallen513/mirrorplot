@@ -21,9 +21,9 @@
 #' @param SHAPES A vector of two shapes. The first shape determines the baseline shape and the second shape for the shape of the variants with a 1 in the highlight column of the data frame. For circles use 21, squares 22, diamonds 23, triangles 24 and upside down triangles 25. The default is for most variants to be circles and the highlighted variants to be triangles (i.e. SHAPES = c(21,24)).}
 #' 
 #' @examples{
-#' mirrorplot(df1, CHR=1, START=1, END=50, SENTINEL="rs20")
+#' mirrorplot(mirrorplot_testdata1, CHR=1, START=1, END=50, SENTINEL="rs20")
 #' 
-#' mirrorplot(df2, CHR=2, START=1, END=50, SENTINEL="rs65",
+#' mirrorplot(mirrorplot_testdata2, CHR=2, START=1, END=50, SENTINEL="rs65",
 #'   GENE_START=10, GENE_END=20,
 #'   T1THRESH1=5e-8, T2THRESH2=5e-8,
 #'   TITLE="Example plot",
