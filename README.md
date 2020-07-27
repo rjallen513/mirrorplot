@@ -20,7 +20,9 @@ More details on how to use the function including for how to change the appearan
 # How to install
 
 library(devtools)
+
 install_git("https://github.com/rjallen513/mirrorplot.git")
+
 library(mirrorplot)
 
 
