@@ -38,24 +38,18 @@ There are also additional variables you can input but don't have to:
 
 ##### Example 1 #####
 
-# Load data with an example where the two traits colocalise. The r2 column shows the linkage disequilibrium with the sentinel variant rs20.
+# Example where the two traits colocalise. The r2 column shows the linkage disequilibrium with the sentinel variant rs20.
 
-df1 <- read.csv("mirrorplot_testdata1")
-
-# Plot the data
-
-mirrorplot(df1, CHR=1, START=1, END=50, SENTINEL="rs20")
+mirrorplot(mirrorplot_testdata1, CHR=1, START=1, END=50, SENTINEL="rs20")
 
 
 ##### Example 2 #####
 
-# Load data with an example where the two traits do not colocalise. The r2 column shows the linkage disequilibrium with the sentinel variant rs65. There is no highlight column included in the dataframe.
+# Example where the two traits do not colocalise. The r2 column shows the linkage disequilibrium with the sentinel variant rs65. There is no highlight column included in the dataframe.
 
-df2 <- read.csv("mirrorplot_testdata2")
+# Plot the data adding a genome-wide significance threshold at 5x10-8 for both traits (in red for the first trait and in blue for the second trait), a title, changing the colours and plotting a gene position.
 
-# Plot the data adding a genome-wide significance threshold at 5x10-8 for both traits (in red for the first trait and in blue for the second trait), a title, changing the colours and plotting a gene position
-
-mirrorplot(df2, CHR=2, START=1, END=50, SENTINEL="rs65",
+mirrorplot(mirrorplot_testdata2, CHR=2, START=1, END=50, SENTINEL="rs65",
   GENE_START=10, GENE_END=20,
   T1THRESH1=5e-8, T2THRESH2=5e-8,
   TITLE="Example plot",
