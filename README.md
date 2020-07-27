@@ -17,6 +17,11 @@ To make the plot above we would use the code:
 More details on how to use the function including for how to change the appearance of the plot see the manual mirrorplot.Rd in the "man" folder. Two example datasets are available in the "data" folder.
 
 
+# How to install
+
+library(devtools)
+install_git("https://github.com/rjallen513/mirrorplot.git")
+library(mirrorplot)
 
 
 # Acknowledgements
