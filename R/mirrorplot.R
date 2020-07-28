@@ -89,6 +89,7 @@ mirrorplot <- function(DF, CHR, START, END, SENTINEL = "sentinel",
   mirrorplot_temp <- mirrorplot_temp[order(mirrorplot_temp$highlight),]
 
   # Make the plot
+  par(mfrow=c(1,1), mar=c(6,7,4,2), bty="l",yaxs="i",xaxs="i")
   plot(mirrorplot_temp$pos, mirrorplot_temp$t1logp/scale1, ylim=c(-10, 10), pch=mirrorplot_temp$shape, bg=mirrorplot_temp$col, col="black", cex=2, axes=F, xlim=c(START, END), xlab="", ylab="-log(p value)", cex.lab=2, main = TITLE, cex.main = 2)
   abline(h=-log10(T1THRESH1)/scale1, col="red", lty=3)
   abline(h=-log10(T1THRESH2)/scale1, col="blue", lty=3)
