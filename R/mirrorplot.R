@@ -64,8 +64,8 @@ mirrorplot <- function(DF, CHR, START, END, SENTINEL = "sentinel",
   mirrorplot_temp <- subset(mirrorplot_temp, pos <= END)
 
   # Calculate -log10 p values for the two traits
-  mirrorplot_temp$t1logp <- -log10(mirrorplot_temp$trait1_p)
-  mirrorplot_temp$t2logp <- -log10(mirrorplot_temp$trait2_p)
+  mirrorplot_temp$t1logp <- -log10(as.numeric(mirrorplot_temp$trait1_p))
+  mirrorplot_temp$t2logp <- -log10(as.numeric(mirrorplot_temp$trait2_p))
 
   # Set the colours
   mirrorplot_temp$col <- "white"
